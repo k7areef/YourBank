@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+  width: 100%;
+  max-width: 80rem;
+}
+
+@theme {
+  /* Green Shades */
+  --color-green-60: #caff33;
+  --color-green-65: #d1ff4c;
+  --color-green-70: #d8ff66;
+  --color-green-80: #e5ff99;
+  --color-green-90: #f2ffcc;
+  --color-green-95: #f8ffe5;
+  --color-green-97: #fbfff0;
+  --color-green-99: #fefffa;
+  /* White Shades */
+  --color-white-90: #e4e4e7;
+  --color-white-95: #f1f1f3;
+  --color-white-97: #f7f7f8;
+  --color-white-99: #fcfcfd;
+  /* Grey Shades */
+  --color-grey-10: #191919;
+  --color-grey-11: #1c1c1c;
+  --color-grey-15: #262626;
+  --color-grey-20: #333333;
+  --color-grey-30: #4c4c4d;
+  --color-grey-35: #59595a;
+  --color-grey-40: #656567;
+  --color-grey-60: #98989a;
+  --color-grey-70: #b3b3b3;
+  --color-grey-75: #bfbfbf;
+}
+
+/* Global */
+html,
+body {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+p {
+  font-size: 14px;
+  color: var(--color-grey-70);
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  p {
+    font-size: 18px;
+  }
+}
